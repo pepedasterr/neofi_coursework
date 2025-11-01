@@ -46,8 +46,6 @@ body {
 .logo {
     display: flex;
     align-items: center;
-    width: 100%;
-    max-width: 254px;
     column-gap: 11px;
 
     &__icon {
@@ -57,7 +55,7 @@ body {
 }
 
     &__text {
-    @include font(24px, 27px, 500);
+    @include font(22px, 27px, 500);
     color: $colorWhite;
 }
 }
@@ -628,10 +626,105 @@ body {
     }
 }
 
+.footer {
+    background-color: $colorBlack;
+    padding: 80px 0 0;
 
+    &__container {
+        display: flex;
+        flex-direction: column;
+    }
 
+    &__wrapper-info {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 92px;
+        margin-bottom: 40px;
+    }
 
+    &__menu {
+        display: flex;
+        align-items: flex-start;
+        gap: 92px;
+    }
 
+    &__title {
+        @include font(20px, 28px, 400);
+        font-family: $fontSecondare;
+        color: $colorLiteGray;
+        margin: 0 auto 24px;
+    }
 
+    &__items {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
 
+    &__link {
+        @include font(14px, 17px, 400);
+        color: $colorGray;
+        text-decoration: none;
+    }
+
+    &__wrapper-right {
+        padding: 40px;
+    }
+
+    &__caption {
+        @include font(12px, 15px, 400);
+        color: $colorGray;
+        text-align: center;
+    }
+
+    &__form {
+        width: 100%;
+        max-width: 385px;
+    }
+
+    &__form-title {
+        max-width: 198px;
+        margin-bottom: 20px;
+        @include font(20px, 28px, 400);
+        color: #D8D8D8;
+        font-family: $fontSecondare;
+    }
+
+     &__form-group {
+      display: flex;
+      align-items: center;
+      border-bottom: 0.5px solid $colorGray;
+      padding-bottom: 16px;
+    }
+
+    &__input {
+      flex: 1;
+      background: transparent;
+      border: none;
+      outline: none;
+      color: $colorGray;
+      font-family: $font;
+      padding: 11.5px 0;
+
+        &::placeholder {
+            color: $colorWhite;
+            opacity: 0.7;
+        }
+    }
+
+    &__btn {
+      background: none;
+      border: none;
+      cursor: pointer;
+
+        &:hover {
+            transform: scale(1.05);
+        }
+  
+        &:active {
+            transform: scale(0.95);
+        }
+    }
+}
 
