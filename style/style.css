@@ -1412,7 +1412,7 @@ body {
 }
 @media (max-width: 767px) {
   .footer {
-    padding: 40px 0 0;
+    padding: 40px 0 20px;
   }
 }
 .footer__wrapper-info {
